@@ -22,16 +22,16 @@ public class Mine {
         //declaramos matriz con tamaño dado por el usuario
         char[][] matriz = new char[filas][columnas];
 
-			    for(int i=0;i<(filas+2);i++){
-		        for(int j=0;j<(columnas+2);j++){
+			    for(int i=0;i<(filas + 2);i++){
+		        for(int j=0;j<(columnas + 2);j++){
 		        	int aleatorio = (int)(Math.random() * vocales.length);
 		            matriz[i][j]=vocales[aleatorio];    
 		        	}
 			    }
 		    
 		//pintar matriz
-		for (int i = 0; i < filas; i++) {
-	        for (int j = 0; j < columnas; j++) {
+		for (int i = 0; i < (filas + 2); i++) {
+	        for (int j = 0; j < (columnas + 2); j++) {
 	            System.out.print(" " + matriz[i][j] + " ");
 	        }
 	        System.out.println(); // Cambio de línea para separar filas
